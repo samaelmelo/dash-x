@@ -1,6 +1,7 @@
 import { ArrowUpIcon, ArrowDownIcon, MoreHorizontal } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { useRotatingData } from '@/hooks/useRotatingData';
 
 interface MetricCardProps {
   title: string;
@@ -44,44 +45,116 @@ function MetricCard({ title, value, change, isPositive, icon, color }: MetricCar
 }
 
 export function MetricsCards() {
-  const metrics = [
-    {
-      title: 'Save Products',
-      value: '50.8K',
-      change: '30.1%',
-      isPositive: true,
-      icon: '💜',
-      color: 'bg-primary'
-    },
-    {
-      title: 'Stock Products',
-      value: '23.6K',
-      change: '12.0%',
-      isPositive: false,
-      icon: '👥',
-      color: 'bg-status-error'
-    },
-    {
-      title: 'Sale Products',
-      value: '756',
-      change: '9.1%',
-      isPositive: true,
-      icon: '🛍️',
-      color: 'bg-status-success'
-    },
-    {
-      title: 'Average Revenue',
-      value: '2.3K',
-      change: '11.9%',
-      isPositive: true,
-      icon: '💰',
-      color: 'bg-chart-secondary'
-    }
+  const metricsDatasets = [
+    [
+      {
+        title: 'Save Products',
+        value: '50.8K',
+        change: '30.1%',
+        isPositive: true,
+        icon: '💜',
+        color: 'bg-primary'
+      },
+      {
+        title: 'Stock Products',
+        value: '23.6K',
+        change: '12.0%',
+        isPositive: false,
+        icon: '👥',
+        color: 'bg-status-error'
+      },
+      {
+        title: 'Sale Products',
+        value: '756',
+        change: '9.1%',
+        isPositive: true,
+        icon: '🛍️',
+        color: 'bg-status-success'
+      },
+      {
+        title: 'Average Revenue',
+        value: '2.3K',
+        change: '11.9%',
+        isPositive: true,
+        icon: '💰',
+        color: 'bg-chart-secondary'
+      }
+    ],
+    [
+      {
+        title: 'Save Products',
+        value: '47.2K',
+        change: '25.3%',
+        isPositive: true,
+        icon: '💜',
+        color: 'bg-primary'
+      },
+      {
+        title: 'Stock Products',
+        value: '28.1K',
+        change: '8.7%',
+        isPositive: true,
+        icon: '👥',
+        color: 'bg-status-error'
+      },
+      {
+        title: 'Sale Products',
+        value: '892',
+        change: '15.4%',
+        isPositive: true,
+        icon: '🛍️',
+        color: 'bg-status-success'
+      },
+      {
+        title: 'Average Revenue',
+        value: '2.8K',
+        change: '18.2%',
+        isPositive: true,
+        icon: '💰',
+        color: 'bg-chart-secondary'
+      }
+    ],
+    [
+      {
+        title: 'Save Products',
+        value: '53.9K',
+        change: '22.8%',
+        isPositive: false,
+        icon: '💜',
+        color: 'bg-primary'
+      },
+      {
+        title: 'Stock Products',
+        value: '19.4K',
+        change: '5.2%',
+        isPositive: false,
+        icon: '👥',
+        color: 'bg-status-error'
+      },
+      {
+        title: 'Sale Products',
+        value: '634',
+        change: '12.9%',
+        isPositive: true,
+        icon: '🛍️',
+        color: 'bg-status-success'
+      },
+      {
+        title: 'Average Revenue',
+        value: '2.1K',
+        change: '7.5%',
+        isPositive: false,
+        icon: '💰',
+        color: 'bg-chart-secondary'
+      }
+    ]
   ];
+
+  const currentMetrics = useRotatingData(metricsDatasets);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-      {metrics.map((metric, index) => (
+      {currentMetrics.map((metric, index) => (
         <MetricCard key={index} {...metric} />
       ))}
     </div>
