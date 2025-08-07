@@ -1,73 +1,52 @@
-# Welcome to your Lovable project
+# 📊 Dashboard Challenge — React + TypeScript + TailwindCSS
 
-## Project info
+Este projeto é um desafio pessoal baseado em um protótipo do Figma, com o objetivo de reproduzir uma dashboard moderna, responsiva e visualmente rica utilizando tecnologias atuais de front-end.
 
-**URL**: https://lovable.dev/projects/88418ac1-9a86-421c-bc02-4ea3f02efd69
+![Dashboard Preview](./Dashboard-3.png)
 
-## How can I edit this code?
+## 🚀 Tecnologias Utilizadas
 
-There are several ways of editing your application.
+### ⚙️ Core
+- **React 18** – Framework principal da interface
+- **TypeScript** – Tipagem estática para melhor escalabilidade
+- **Vite** – Ferramenta de build moderna e super rápida
 
-**Use Lovable**
+### 🎨 Estilização & Design
+- **Tailwind CSS** – Estilização com utilitários CSS
+- **shadcn/ui** – Sistema de componentes React reutilizáveis
+- **Lucide React** – Biblioteca de ícones SVG
+- **CVA (Class Variance Authority)** – Para variantes de componentes
+- **Tailwind Animate** – Animações CSS simples e rápidas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/88418ac1-9a86-421c-bc02-4ea3f02efd69) and start prompting.
+### 📊 Visualização de Dados
+- **Recharts** – Biblioteca para gráficos interativos
+  - Gráficos de pizza (`PieChart`)
+  - Gráficos de barras (`BarChart`)
+  - Gráficos de linha (`LineChart`)
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🔀 Roteamento & Estado
+- **React Router DOM** – Navegação entre rotas da aplicação
+- **TanStack Query (React Query)** – Gerenciamento de estado do servidor
+- **Custom Hooks** – `useRotatingData` para alternância automática de dados
 
-**Use your preferred IDE**
+### 🧪 Ferramentas de Desenvolvimento
+- **ESLint** – Linting e padronização de código
+- **PostCSS** – Processamento de CSS
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## ✅ Funcionalidades Implementadas
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Layout 100% responsivo com sidebar fixa
+- Cards de métricas com indicadores visuais
+- Gráficos interativos (pizza, barras, linha)
+- Tabela de pedidos com status e ícones
+- Tabela de produtos com preços dinâmicos
+- Rotação automática de dados a cada 30 segundos
+- Design system com cores em HSL semânticas
+- Tema dark mode nativo
 
-Follow these steps:
+## 📝 Observações
+Este projeto não possui backend real — os dados são mockados para fins de visualização e experiência.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/88418ac1-9a86-421c-bc02-4ea3f02efd69) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Desenvolvido por [Samael Melo](https://www.linkedin.com/in/samael-melo/)** 🚀
