@@ -8,35 +8,61 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark dashboard theme inspired by the design */
+    --background: 220 25% 6%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 20% 10%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 280 100% 65%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 195 100% 50%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 280 100% 65%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 20%;
+    --input: 220 15% 15%;
+    --ring: 280 100% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Custom dashboard colors */
+    --dashboard-bg: 220 25% 6%;
+    --sidebar-bg: 220 30% 4%;
+    --card-bg: 220 20% 10%;
+    --card-border: 220 15% 20%;
+    
+    /* Chart colors */
+    --chart-primary: 280 100% 65%;
+    --chart-secondary: 195 100% 50%;
+    --chart-tertiary: 120 100% 50%;
+    --chart-quaternary: 45 100% 50%;
+    
+    /* Status colors */
+    --success: 120 100% 40%;
+    --warning: 45 100% 50%;
+    --error: 0 84% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(280 100% 65%) 0%, hsl(195 100% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 10%) 0%, hsl(220 15% 12%) 100%);
+    
+    /* Glows */
+    --glow-primary: 0 0 20px hsl(280 100% 65% / 0.3);
+    --glow-secondary: 0 0 20px hsl(195 100% 50% / 0.3);
 
     --sidebar-background: 0 0% 98%;
 
