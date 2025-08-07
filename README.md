@@ -2,7 +2,7 @@
 
 Este projeto é um desafio pessoal baseado em um protótipo do Figma, com o objetivo de reproduzir uma dashboard moderna, responsiva e visualmente rica utilizando tecnologias atuais de front-end.
 
-![Dashboard Preview](./Dashboard-3.png)
+![Dashboard Preview](https://dash-x-samael-melos-projects.vercel.app/)
 
 ## 🚀 Tecnologias Utilizadas
 
