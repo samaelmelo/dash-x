@@ -35,7 +35,7 @@ export function Sidebar() {
           <div className="w-6 h-6 bg-gradient-primary rounded-md flex items-center justify-center">
             <div className="w-3 h-3 bg-white rounded-sm"></div>
           </div>
-          <span className="font-semibold text-foreground">Dashdark X</span>
+          <span className="font-semibold text-foreground">Dash-x</span>
         </div>
       </div>
 
